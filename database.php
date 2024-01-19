@@ -4,7 +4,7 @@ class database{
     var $host = "localhost";
 	var $username = "root";
 	var $password = "";
-	var $database = "mycomputerv1";
+	var $database = "mycomputerv2";
 	var $koneksi = "";
 	function __construct(){
 		$this->koneksi = mysqli_connect($this->host, $this->username, $this->password,$this->database);
@@ -85,8 +85,8 @@ class database{
 	// tampil data end
 
 // tambah pelanggan start
-	function Input_data_pelanggan($nama, $alamat, $jeniskelamin, $no_tlpn, $email){
-		mysqli_query($this->koneksi,"insert into tb_pelanggan values ('','$nama','$alamat','$jeniskelamin','$no_tlpn','$email')");
+	function Input_data_pelanggan($nama, $jenis_kelamin, $alamat, $no_tlpn, $email){
+		mysqli_query($this->koneksi,"insert into tb_pelanggan values ('','$nama','$jenis_kelamin','$alamat','$no_tlpn','$email')");
 	}
 // tambah pelanggan end 
 

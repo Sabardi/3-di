@@ -12,7 +12,7 @@ include "sidebar.php";
         <a href="pelanggan-add.php" class="btn btn-sm btn-primary m-2">Tambah pelanggan</a>
         <div class="bg-light rounded h-100 p-4">
             <div class="table-responsive">
-                    <table class="table">
+                    <table class="table text-start align-middle table-bordered table-hover mb-0">
                         <thead>
                         
                             <tr>
@@ -43,8 +43,7 @@ include "sidebar.php";
                                 <td><?= $data['no_hp']?></td>
                                 <td><?= $data['email']?></td>
                                 <td>
-                                    <a href="pelanggan-edit.php" class="btn btn-success rounded-pill m-2">Edit</a>
-                                
+                                    <a href="pelanggan-edit.php?Id_pelanggan=<?= $data['Id_pelanggan']; ?>&aksi=edit" class="btn btn-success rounded-pill m-2">Edit</a>
                                     <a href="proses.php?Id_pelanggan=<?= $data['Id_pelanggan']; ?>&aksi=hapus"
                                             onclick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger rounded-pill m-2">Hapus</a>
                                 </td>

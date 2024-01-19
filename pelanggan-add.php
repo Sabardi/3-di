@@ -13,51 +13,52 @@ include "sidebar.php";
         <div class="bg-light rounded h-100 p-4">
             <div class="table-responsive">
                 <form action="proses.php?aksi=tambah" method="post">
+                <table>
+                    <!-- nama -->
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Nama</label>
+                        <label for="nama" class="form-label">Nama</label>
     
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    
-                    </div>
-            
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Alamat</label>
-            
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" name="nama" id="nama">
                     </div>
 
-    
+                    <!-- jenis kelamin  -->
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-check-inline">Jenis kelamin</label>
-                        <?php $jk = $data['Jenis_kelamin']; ?>
-    
+                        <label for="jenis_kelamin" class="form-check-inline">Jenis kelamin</label>
                             <div class="form-check form-check-inline">                                                  
-                                <input type="radio" name="Jenis_kelamin" id="jenis_kelamin_l" class="form-check-input " value="laki-laki" <?php echo ($jk == 'laki-laki') ? "checked": "" ?>>
+                                <input type="radio" name="jenis_kelamin" value="Laki-laki" class="form-check-input" checked>
                                 <label for="jenis_kelamin_l" class="form-check-label">Laki-laki</label>
                             </div>
-                        
-                            <div class="form-check form-check-inline">
-                                <input type="radio" name="Jenis_kelamin" id="jenis_kelamin_p" class="form-check-input " value="perempuan" <?php echo ($jk == 'perempuan') ? "checked": "" ?>>
-                                
-                                <label for="jenis_kelamin_p" class="form-check-label">Perempuan</label>
+
+                            <div class="form-check form-check-inline">  
+                                <input type="radio" name="jenis_kelamin" value="Perempuan" class="form-check-input">
+                                <label for="Jenis_kelamin" class="form-check-label">Perempuan</label>
                             </div>
                     </div>
 
+                    <!-- alamat -->
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">No telpon</label>
+                        <label for="alamat" class="form-label">Alamat</label>
             
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" name="alamat" id="alamat" class="form-control">
                     </div>
-    
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email </label>
-                
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                
-                    </div>
-                  
-                    <button type="submit" class="btn btn-primary" onclick="return confirm('Anda yakin ingin Menambah data ini?')">simpan</button>
 
+                    <!-- nomer telpon  -->
+                    <div class="mb-3">
+                        <label for="no_hp" class="form-label">No telpon</label>
+            
+                        <input type="text" name="no_hp" id="no_hp" class="form-control">
+                    </div>
+
+                    <!-- email  -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email </label>
+                
+                        <input type="text" name="email" id="email" class="form-control" aria-describedby="emailHelp">
+                
+                    </div>
+                </table>
+                    <button type="submit" class="btn btn-primary">simpan</button>
+                
                 </form>
                 </div>
             </div>
