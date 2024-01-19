@@ -73,38 +73,6 @@ class database{
     }
 
 	// login dan log out end
-	
-
-    // clas tampil data service
-	function Data_service()
-	{
-		$data = mysqli_query($this->koneksi,"select * from tb_service");
-		while($row = mysqli_fetch_array($data)){
-			$hasil[] = $row;
-		}
-		return $hasil;
-	}
-    // Clas input data service
-	function Input_data_service($nama_perangkat,$model,$tanggal_masuk,$deskripsi){
-		mysqli_query($this->koneksi,"insert into tb_service values ('','$nama_perangkat','$model','$tanggal_masuk','$deskripsi')");
-	}
-    // proses hapus data servicw 
-	function Hapus_data_service($id){
-		mysqli_query($this->koneksi,"delete from tb_service where id_service='$id'");
-	}
-    // class edit data service  
-	function Edit_data_service($id){
-		$data = mysqli_query($this->koneksi,"select * from tb_service where id_service='$id'");
-		while($d = mysqli_fetch_array($data)){
-			$hasil[] = $d;
-		}
-		return $hasil;
-	}
-    // proses update data service
-	function Update_data_service($id,$nama_perangkat,$model,$tanggal_masuk,$deskripsi){
-		mysqli_query($this->koneksi,"update tb_service set nama_perangkat='$nama_perangkat', model='$model', tanggal_masuk='$tanggal_masuk',deskripsi='$deskripsi' where id_service='$id'");
-	}
-	// Data_teknisi
 
     // clas tampil pelanggan start
 	function Data_Pelanggan(){
@@ -117,8 +85,8 @@ class database{
 	// tampil data end
 
 // tambah pelanggan start
-	function Input_data_pelanggan($nama, $alamat, $no_tlpn){
-		mysqli_query($this->koneksi,"insert into tb_pelanggan values ('','$nama','$alamat','$no_tlpn')");
+	function Input_data_pelanggan($nama, $alamat, $jeniskelamin, $no_tlpn, $email){
+		mysqli_query($this->koneksi,"insert into tb_pelanggan values ('','$nama','$alamat','$jeniskelamin','$no_tlpn','$email')");
 	}
 // tambah pelanggan end 
 
@@ -139,10 +107,42 @@ class database{
 	// class edit data pelanggan  end 
 
 // proses update data pelanggan start
-function Update_data_pelanggan($id,$nama, $alamat, $no_tlpn){
-	mysqli_query($this->koneksi,"update tb_pelanggan set nama='$nama', alamat='$alamat', no_hp='$no_tlpn' where Id_pelanggan='$id'");
+function Update_data_pelanggan($id,$nama, $jeniskelamin, $alamat, $no_tlpn, $email){
+	mysqli_query($this->koneksi,"update tb_pelanggan set nama='$nama', jenis_kelamin='$jeniskelamin', alamat='$alamat', no_hp='$no_tlpn', email='$email' where Id_pelanggan='$id'");
 }
 // proses update data pelanggan end
+
+
+// clas tampil data service
+function Data_service()
+{
+	$data = mysqli_query($this->koneksi,"select * from tb_service");
+	while($row = mysqli_fetch_array($data)){
+		$hasil[] = $row;
+	}
+	return $hasil;
+}
+// Clas input data service
+function Input_data_service($nama_perangkat,$model,$tanggal_masuk,$deskripsi){
+	mysqli_query($this->koneksi,"insert into tb_service values ('','$nama_perangkat','$model','$tanggal_masuk','$deskripsi')");
+}
+// proses hapus data servicw 
+function Hapus_data_service($id){
+	mysqli_query($this->koneksi,"delete from tb_service where id_service='$id'");
+}
+// class edit data service  
+function Edit_data_service($id){
+	$data = mysqli_query($this->koneksi,"select * from tb_service where id_service='$id'");
+	while($d = mysqli_fetch_array($data)){
+		$hasil[] = $d;
+	}
+	return $hasil;
+}
+// proses update data service
+function Update_data_service($id,$nama_perangkat,$model,$tanggal_masuk,$deskripsi){
+	mysqli_query($this->koneksi,"update tb_service set nama_perangkat='$nama_perangkat', model='$model', tanggal_masuk='$tanggal_masuk',deskripsi='$deskripsi' where id_service='$id'");
+}
+// Data_teknisi
 
 	// clas tampil teknisi start
 	function Data_teknisi(){

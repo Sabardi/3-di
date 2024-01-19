@@ -1,10 +1,10 @@
 <?php
 include "database.php";
-$database = new Database();
-$data_service = $database->Data_Pelanggan();
+
 include "navbar.php";
 include "sidebar.php";
 ?>
+
 
 <div class="container-fluid pt-4 px-4">
     <div class="col-12">
@@ -12,6 +12,8 @@ include "sidebar.php";
         <a href="pelanggan-add.php" class="btn btn-sm btn-primary m-2">Tambah pelanggan</a>
         <div class="bg-light rounded h-100 p-4">
             <div class="table-responsive">
+                <div>
+                </div>
                     <table class="table">
                         <thead>
                         
@@ -43,7 +45,7 @@ include "sidebar.php";
                                 <td><?= $data['no_hp']?></td>
                                 <td><?= $data['email']?></td>
                                 <td>
-                                    <a href="pelanggan-edit.php" class="btn btn-success rounded-pill m-2">Edit</a>
+                                    <a href="edit.php?Id_pelanggan=<?= $data['Id_pelanggan']; ?>&aksi=edit" class="btn btn-success rounded-pill m-2">Edit</a>
                                 
                                     <a href="proses.php?Id_pelanggan=<?= $data['Id_pelanggan']; ?>&aksi=hapus"
                                             onclick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger rounded-pill m-2">Hapus</a>
@@ -61,6 +63,7 @@ include "sidebar.php";
     </div>
 
 </div>
+
 <?php
 include "footer.php";
 ?>

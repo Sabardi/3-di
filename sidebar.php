@@ -25,7 +25,7 @@
                             <a href="element.html" class="dropdown-item">Other Elements</a>
                         </div>
                     </div> -->
-                    <a href="data-teknisi.php" class="nav-item nav-link"><i class="fa fa-home"></i>Teknisi</a>
+                    <a href="teknisi-data.php" class="nav-item nav-link"><i class="fa fa-home"></i>Teknisi</a>
 
 
                     <a href="widget.html" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Service masuk</a>
