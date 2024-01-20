@@ -9,7 +9,7 @@ include "sidebar.php";
     <h1 class="mt-4">Teknisi</h1>
     <div class="col-12">
         <h6 class="mb-4">Teknisi</h6>
-        <a href="" class="btn btn-sm btn-primary m-2">Tambah pelanggan</a>
+        <a href="teknisi-add.php" class="btn btn-sm btn-primary m-2">Tambah Teknisi</a>
         <div class="bg-light rounded h-100 p-4">
 
                 <div class="table-responsive">
@@ -42,8 +42,8 @@ include "sidebar.php";
                                 <td><?= $data['spesialis']?></td>
                                 <td><?= $data['no_hp']?></td>
                                 <td>
-                                    <a href="edit.php?id_teknisi=<?= $data['id_teknisi']; ?>&aksi=edit" class="btn btn-success rounded-pill m-2">Edit</a>
-                                    <a href="proses.php?id_teknisi=<?= $data['id_teknisi']; ?>&aksi=hapus"
+                                    <a href="teknisi-edit.php?id_teknisi=<?= $data['id_teknisi']; ?>&aksi=edit" class="btn btn-success rounded-pill m-2">Edit</a>
+                                    <a href="proses.php?id_teknisi=<?= $data['id_teknisi']; ?>&aksi=hapusteknisi"
                                     onclick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger rounded-pill m-2">Hapus</a>
                                 </td>
                             </tr>
