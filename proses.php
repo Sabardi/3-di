@@ -16,7 +16,7 @@ if($aksi == "tambah"){
 
 
 }elseif($aksi == "tambahteknisi"){
-    $database->Input_data_teknisi($_POST['nama_teknisi'],$_POST['alamat'],$_POST['spesialis'],$_POST['no_hp']);
+    $database->Input_data_teknisi($_POST['nama_teknisi'],$_POST['alamat'],$_POST['spesialis'],$_POST['no_hp']);    
     header('location:teknisi-data.php');
 }elseif($aksi == "hapusteknisi"){
     $database->Hapus_data_teknisi($_GET['id_teknisi']);
