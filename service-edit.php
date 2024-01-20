@@ -55,7 +55,7 @@ include "sidebar.php";
                         <div class="mb-3">
                             <label for="no_hp" class="form-label">No telpon</label>
                 
-                            <input type="text" name="no_hp" id="no_hp" value="<?php echo $data['no_hp']; ?>" class="form-control">
+                            <input type="number" name="no_hp" id="no_hp" value="<?php echo $data['no_hp']; ?>" class="form-control">
                         </div>
 
                         <!-- email  -->
