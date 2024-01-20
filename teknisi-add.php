@@ -25,7 +25,7 @@ include "sidebar.php";
                     <div class="mb-3">
                         <label for="jenis_kelamin" class="form-check-inline">Jenis kelamin</label>
                             <div class="form-check form-check-inline">                                                  
-                                <input type="radio" name="jenis_kelamin" value="Laki-laki" class="form-check-input" checked>
+                                <input type="radio" name="Jenis_kelamin" value="Laki-laki" class="form-check-input" checked>
                                 <label for="jenis_kelamin_l" class="form-check-label">Laki-laki</label>
                             </div>
 
@@ -34,7 +34,7 @@ include "sidebar.php";
                                 <label for="Jenis_kelamin" class="form-check-label">Perempuan</label>
                             </div>
                     </div>
-
+                    
                     <!-- alamat -->
                     <div class="mb-3">
                         <label for="alamat" class="form-label">Alamat</label>

@@ -155,8 +155,8 @@ function Update_data_service($id,$nama_perangkat,$model,$tanggal_masuk,$deskrips
 		// tampil teknisi end 
 	}
 // tambah teknisi start
-	function Input_data_teknisi($nama, $alamat,$spesialis, $no_tlpn){
-		mysqli_query($this->koneksi,"insert into tb_teknisi values ('','$nama','$alamat','$spesialis','$no_tlpn')");
+	function Input_data_teknisi($nama,$Jenis_kelamin, $alamat,$spesialis, $no_tlpn){
+		mysqli_query($this->koneksi,"insert into tb_teknisi values ('','$nama','$Jenis_kelamin','$alamat','$spesialis','$no_tlpn')");
 	}
 // tambah teknisi end 
 
@@ -178,8 +178,8 @@ function Update_data_service($id,$nama_perangkat,$model,$tanggal_masuk,$deskrips
 	// class edit data teknisi   end 
 
 	// proses update data teknisi start
-	function Update_data_teknisi($id,$nama, $alamat,$spesialis, $no_tlpn){
-		mysqli_query($this->koneksi,"update tb_teknisi set nama_teknisi='$nama', alamat='$alamat',spesialis='$spesialis', no_hp='$no_tlpn' where id_teknisi='$id'");
+	function Update_data_teknisi($id,$nama, $Jenis_kelamin, $alamat,$spesialis, $no_tlpn){
+		mysqli_query($this->koneksi,"update tb_teknisi set nama_teknisi='$nama', Jenis_kelamin='$Jenis_kelamin', alamat='$alamat',spesialis='$spesialis', no_hp='$no_tlpn' where id_teknisi='$id'");
 	}
 	// proses update data teknisi end
 	    
