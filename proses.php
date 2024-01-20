@@ -14,7 +14,7 @@ if($aksi == "tambah"){
     $database->Update_data_pelanggan($_POST['Id_pelanggan'],$_POST['nama'],$_POST['jenis_kelamin'],$_POST['alamat'],$_POST['no_hp'],$_POST['email']);
     header('location:pelanggan-data.php');
 
-
+// start proses teknisi
 }elseif($aksi == "tambahteknisi"){
     $database->Input_data_teknisi($_POST['nama_teknisi'],$_POST['Jenis_kelamin'],$_POST['alamat'],$_POST['spesialis'],$_POST['no_hp']);    
     header('location:teknisi-data.php');
@@ -22,6 +22,17 @@ if($aksi == "tambah"){
     $database->Hapus_data_teknisi($_GET['id_teknisi']);
     header('location:teknisi-data.php');
 }elseif($aksi == "updateteknisi"){
+    $database->Update_data_teknisi($_POST['id_teknisi'],$_POST['nama_teknisi'],$_POST['Jenis_kelamin'],$_POST['alamat'],$_POST['spesialis'],$_POST['no_hp']);
+    header('location:teknisi-data.php');
+
+// start proses service
+}elseif($aksi == "tambahtservis"){
+    $database->Input_data_teknisi($_POST['nama_teknisi'],$_POST['Jenis_kelamin'],$_POST['alamat'],$_POST['spesialis'],$_POST['no_hp']);    
+    header('location:teknisi-data.php');
+}elseif($aksi == "hapusservis"){
+    $database->Hapus_data_teknisi($_GET['id_teknisi']);
+    header('location:teknisi-data.php');
+}elseif($aksi == "updateservis"){
     $database->Update_data_teknisi($_POST['id_teknisi'],$_POST['nama_teknisi'],$_POST['Jenis_kelamin'],$_POST['alamat'],$_POST['spesialis'],$_POST['no_hp']);
     header('location:teknisi-data.php');
 }
