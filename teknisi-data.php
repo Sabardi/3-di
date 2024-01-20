@@ -43,7 +43,7 @@ include "sidebar.php";
                                 <td><?= $data['no_hp']?></td>
                                 <td>
                                     <a href="teknisi-edit.php?id_teknisi=<?= $data['id_teknisi']; ?>&aksi=edit" class="btn btn-success rounded-pill m-2">Edit</a>
-                                    <a href="proses.php?id_teknisi=<?= $data['id_teknisi']; ?>&aksi=hapusteknisi"
+                                    <a href="proses.php?id_teknisi=<?= $data['id_teknisi']; ?>&aksi=hapus"
                                     onclick="return confirm('Anda yakin ingin menghapus data ini?')" class="btn btn-danger rounded-pill m-2">Hapus</a>
                                 </td>
                             </tr>

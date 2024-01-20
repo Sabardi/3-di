@@ -25,15 +25,15 @@ if($aksi == "tambah"){
     $database->Update_data_teknisi($_POST['id_teknisi'],$_POST['nama_teknisi'],$_POST['Jenis_kelamin'],$_POST['alamat'],$_POST['spesialis'],$_POST['no_hp']);
     header('location:teknisi-data.php');
 
-// start proses service
+// start proses service masuk
 }elseif($aksi == "tambahtservis"){
-    $database->Input_data_teknisi($_POST['nama_teknisi'],$_POST['Jenis_kelamin'],$_POST['alamat'],$_POST['spesialis'],$_POST['no_hp']);    
+    $database->Input_data_service($_POST['nama_perangkat'],$_POST['model'],$_POST['tanggal_masuk'],$_POST['deskripsi']);
     header('location:teknisi-data.php');
 }elseif($aksi == "hapusservis"){
-    $database->Hapus_data_teknisi($_GET['id_teknisi']);
+    $database->Hapus_data_service($_GET['id_service']);
     header('location:teknisi-data.php');
 }elseif($aksi == "updateservis"){
-    $database->Update_data_teknisi($_POST['id_teknisi'],$_POST['nama_teknisi'],$_POST['Jenis_kelamin'],$_POST['alamat'],$_POST['spesialis'],$_POST['no_hp']);
+    $database->Update_data_service($_POST['id_service'],$_POST['nama_perangkat'],$_POST['model'],$_POST['tanggal_masuk'],$_POST['deskripsi']);
     header('location:teknisi-data.php');
 }
 ?>
