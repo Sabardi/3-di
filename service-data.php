@@ -40,7 +40,7 @@ include "sidebar.php";
                                 <td><?= $data['deskripsi']?></td>
                                 <td>
                                 <a href="service-edit.php?id_service=<?php echo $data['id_service']; ?>&aksi=edit" class="btn btn-success">Edit</a>
-                                <a href="proses.php?id_service=<?php echo $data['id_service']; ?>&aksi=hapus" class="btn btn-danger"
+                                <a href="proses.php?id_service=<?php echo $data['id_service']; ?>&aksi=hapusservis" class="btn btn-danger"
                                 onclick="return confirm('Anda yakin ingin menghapus data ini?')">Hapus</a>
                                 </td>
                             </tr>

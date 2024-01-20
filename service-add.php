@@ -12,7 +12,7 @@ include "sidebar.php";
         <!-- <a href="pelanggan-add.php" class="btn btn-sm btn-primary m-2">Tambah pelanggan</a> -->
         <div class="bg-light rounded h-100 p-4">
             <div class="table-responsive">
-                <form action="proses.php?aksi=tambahservice" method="post">
+                <form action="proses.php?aksi=tambahtservis" method="post">
                 <table>
                     <!-- nama -->
                     <div class="mb-3">
@@ -27,9 +27,9 @@ include "sidebar.php";
 
                     <!-- model -->
                     <div class="mb-3">
-                        <label for="nama" class="form-label">Model</label>
+                        <label for="model" class="form-label">Model</label>
     
-                        <input type="text" class="form-control" name="nama" id="nama">
+                        <input type="text" class="form-control" name="model" id="model">
                     </div>
 
                     <!-- tanggal masuk -->
