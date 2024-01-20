@@ -4,7 +4,8 @@ class database{
     var $host = "localhost";
 	var $username = "root";
 	var $password = "";
-	var $database = "mycomputerv2";
+	// var $database = "mycomputerv2";
+	var $database = "mycomputerv1";
 	var $koneksi = "";
 	function __construct(){
 		$this->koneksi = mysqli_connect($this->host, $this->username, $this->password,$this->database);
@@ -279,7 +280,7 @@ function Update_data_service($id,$nama_perangkat,$model,$tanggal_masuk,$deskrips
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="asset/" rel="stylesheet">
