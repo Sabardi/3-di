@@ -29,6 +29,7 @@
 
 
                     <a href="service-data.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Service masuk</a>
+                    <a href="form-data-pelanggan.php" class="nav-item nav-link"><i class="fa fa-th me-2"></i>Tambah data</a>
                     <a href="form.html" class="nav-item nav-link"><i class="fa fa-keyboard me-2"></i>Laporan</a>
                     <a href="table.html" class="nav-item nav-link"><i class="fa fa-table me-2"></i>Tables</a>
                     <div class="nav-item dropdown">

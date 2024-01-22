@@ -254,6 +254,12 @@ function Update_data_service($id,$nama_perangkat,$model,$tanggal_masuk,$deskrips
 		// 	// tampil teknisi end 
 		// }
 
+
+		function Input_data_reservasi($nama, $jenis_kelamin, $alamat, $no_tlpn, $email,$nama_perangkat,$model,$tanggal_masuk,$deskripsi){
+			mysqli_query($this->koneksi,"insert into tb_pelanggan values ('','$nama','$jenis_kelamin','$alamat','$no_tlpn','$email')");
+			mysqli_query($this->koneksi,"insert into tb_service values ('','$nama_perangkat','$model','$tanggal_masuk','$deskripsi')");
+			
+		}
 }
 ?>
 

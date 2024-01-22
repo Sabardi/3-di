@@ -35,5 +35,10 @@ if($aksi == "tambah"){
 }elseif($aksi == "updateservis"){
     $database->Update_data_service($_POST['id_service'],$_POST['nama_perangkat'],$_POST['model'],$_POST['tanggal_masuk'],$_POST['deskripsi']);
     header('location:service-data.php');
+}elseif($aksi == "tambahreservasi"){
+    $database->Input_data_reservasi($_POST['nama'],$_POST['jenis_kelamin'],$_POST['alamat'],$_POST['no_hp'],$_POST['email'],
+    $_POST['nama_perangkat'],$_POST['model'],$_POST['tanggal_masuk'],$_POST['deskripsi']);
+    header('location:service-data.php');
 }
+
 ?>
