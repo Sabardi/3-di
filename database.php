@@ -28,7 +28,7 @@ class database{
             //     header("location:index-admin.php");
             if ($data['level'] == "admin") {
                 $this->setSession($username, "admin");
-                header("location:dashboard.php");
+                header("location:index-admin.php");
             } elseif ($data['level'] == "member") {
                 $this->setSession($username, "member");
                 header("location:index-member.php");
@@ -308,3 +308,4 @@ function Update_data_service($id,$nama_perangkat,$model,$tanggal_masuk,$deskrips
             </div>
         </div>
         <!-- Spinner End -->
+
