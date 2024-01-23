@@ -9,7 +9,7 @@ include "sidebar.php";
 <div class="container-fluid pt-4 px-4">
     <div class="col-12">
         <h6 class="mb-4">Data pelanggan</h6>
-        <a href="pelanggan-add.php" class="btn btn-sm btn-primary m-2">Tambah pelanggan</a>
+        <!-- <a href="pelanggan-add.php" class="btn btn-sm btn-primary m-2">Tambah pelanggan</a> -->
         <div class="bg-light rounded h-100 p-4">
             <div class="table-responsive">
                     <table class="table text-start align-middle table-bordered table-hover mb-0">

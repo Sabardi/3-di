@@ -12,7 +12,7 @@ include "sidebar.php";
         <!-- <a href="pelanggan-add.php" class="btn btn-sm btn-primary m-2">Tambah pelanggan</a> -->
         <div class="bg-light rounded h-100 p-4">
             <div class="table-responsive">
-                <form action="proses.php?aksi=update" method="post">
+                <form action="proses.php?aksi=updateservis" method="post">
                 <?php
                     foreach($database->Edit_data_service($_GET['id_service']) as $data){
                 ?>
@@ -20,7 +20,7 @@ include "sidebar.php";
                        
                     <!-- id -->
                         <div class="mb-3">
-                                <input type="hidden" name="Id_pelanggan" id="Id_pelanggan" value="<?php echo $data['Id_pelanggan']; ?>">
+                                <input type="hidden" name="id_service" id="id_service" value="<?php echo $data['id_service']; ?>">
                         </div>
 
                         <div class="mb-3">

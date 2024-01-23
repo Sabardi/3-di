@@ -9,7 +9,7 @@ include "sidebar.php";
 <div class="container-fluid pt-4 px-4">
     <div class="col-12">
         <h6 class="mb-4">Data pelanggan</h6>
-        <a href="service-add.php" class="btn btn-sm btn-primary m-2">Tambah service</a>
+        <!-- <a href="service-add.php" class="btn btn-sm btn-primary m-2">Tambah service</a> -->
         <div class="bg-light rounded h-100 p-4">
             <div class="table-responsive">
                     <table class="table text-start align-middle table-bordered table-hover mb-0">
@@ -40,7 +40,7 @@ include "sidebar.php";
                                 <td><?= $data['deskripsi']?></td>
                                 <td>
                                 <a href="service-edit.php?id_service=<?php echo $data['id_service']; ?>&aksi=edit" class="btn btn-success">Edit</a>
-                                <a href="proses.php?id_service=<?php echo $data['id_service']; ?>&aksi=hapus" class="btn btn-danger"
+                                <a href="proses.php?id_service=<?php echo $data['id_service']; ?>&aksi=hapusservis" class="btn btn-danger"
                                 onclick="return confirm('Anda yakin ingin menghapus data ini?')">Hapus</a>
                                 </td>
                             </tr>
